@@ -1,1 +1,1 @@
-①[example.txt]これは最初のメッセージ 
+②[example.txt]これは feature/2-edit-example ブランチで変更したメッセージ
