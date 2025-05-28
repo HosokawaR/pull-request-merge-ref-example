@@ -1,0 +1,28 @@
+name: Demo Workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed, labeled, unlabeled]
+  push:
+    branches:
+      - main
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Show file contents
+        run: |
+          echo "=== Current file list ==="
+          ls -la
+
+          echo "=== Current file contents ==="
+          cat *.txt
+          
+          echo -e "\n=== Git log ==="
+          git log --oneline -n 5
+          
