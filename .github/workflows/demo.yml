@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, closed, labeled, unlabeled]
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   demo:
