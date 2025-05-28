@@ -1,0 +1,1 @@
+②[example-2.txt]これは feature/2-add-example-2 ブランチで追加されたメッセージ
